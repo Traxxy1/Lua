@@ -9744,14 +9744,14 @@ addcmd('remotespy',{'rspy'},function(args, speaker)
 	notify("Loading",'Hold on a sec')
 	-- Full credit to exx, creator of SimpleSpy
 	local owner = "Upbolt"
-local branch = "revision"
+	local branch = "revision"
 
-local function webImport(file)
+	local function webImport(file)
     return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
 end
 
-webImport("init")
-webImport("ui/main")
+	webImport("init")
+	webImport("ui/main")
 end)
 
 addcmd('audiologger',{'alogger'},function(args, speaker)
